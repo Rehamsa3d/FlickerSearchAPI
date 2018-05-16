@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your search word and enjoy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCs-J9-oKr">
-                                <rect key="frame" x="16" y="252" width="343" height="40"/>
+                                <rect key="frame" x="16" y="292" width="343" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sSt-Xr-A4o"/>
@@ -43,7 +43,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJl-n3-tzO" secondAttribute="trailing" constant="16" id="042-w8-ngE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCs-J9-oKr" secondAttribute="trailing" constant="16" id="DaK-eU-9aN"/>
                             <constraint firstItem="EJl-n3-tzO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Txe-at-8aC"/>
-                            <constraint firstItem="PCs-J9-oKr" firstAttribute="top" secondItem="EJl-n3-tzO" secondAttribute="bottom" constant="24" id="cV0-5V-1Jn"/>
+                            <constraint firstItem="PCs-J9-oKr" firstAttribute="top" secondItem="EJl-n3-tzO" secondAttribute="bottom" constant="64" id="cV0-5V-1Jn"/>
                             <constraint firstItem="PCs-J9-oKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fj4-F2-c1F"/>
                             <constraint firstItem="EJl-n3-tzO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="rSg-ID-btn"/>
                         </constraints>
