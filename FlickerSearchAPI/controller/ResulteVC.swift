@@ -54,7 +54,20 @@ class ResulteVC: UIViewController {
     
     //handelRefresh of Flicker API
     func handelRefresh() {
-//        API.getPhoto(searchTerm: type!) { (error , Photos) in
+        
+        API.getPhoto(searchTerm: type!) { (error , Photos) in
+            
+            if let results = Photos {
+                // 3
+                print("Found \(results.searchResults.count) matching \(results.searchTerm)")
+                self.searches.insert(results, at: 0)
+                
+                // 4
+                self.collectionView?.reloadData()
+                self.stopAnimating()
+            }
+            
+//            
 //            if Photos != nil {
 //
 ////                self.searches.append(Photos)
@@ -63,31 +76,31 @@ class ResulteVC: UIViewController {
 //                self.collectionView?.reloadData()
 //            }
 //            self.stopAnimating()
-//
-//        }
 
-        flickr.searchFlickrForTerm(type!) {
-            results, error in
-
-            if let error = error {
-                // 2
-                print("Error searching : \(error)")
-                self.stopAnimating()
-                self.messageToDisplay(messageToDisplay: "no matches Results")
-
-                return
-            }
-
-            if let results = results {
-                // 3
-                print("Found \(results.searchResults.count) matching \(results.searchTerm)")
-                self.searches.insert(results, at: 0)
-
-                // 4
-                self.collectionView?.reloadData()
-                self.stopAnimating()
-            }
         }
+
+//        flickr.searchFlickrForTerm(type!) {
+//            results, error in
+//
+//            if let error = error {
+//                // 2
+//                print("Error searching : \(error)")
+//                self.stopAnimating()
+//                self.messageToDisplay(messageToDisplay: "no matches Results")
+//
+//                return
+//            }
+//
+//            if let results = results {
+//                // 3
+//                print("Found \(results.searchResults.count) matching \(results.searchTerm)")
+//                self.searches.insert(results, at: 0)
+//
+//                // 4
+//                self.collectionView?.reloadData()
+//                self.stopAnimating()
+//            }
+//        }
         
     }
     

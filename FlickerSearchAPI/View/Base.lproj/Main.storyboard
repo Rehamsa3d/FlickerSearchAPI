@@ -49,7 +49,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Flicker" id="FKw-e8-kHe"/>
+                    <navigationItem key="navigationItem" title="Flicker" id="FKw-e8-kHe">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Cul-Zp-pYX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchTextField" destination="PCs-J9-oKr" id="FLv-wg-Qpk"/>
                         <segue destination="eOf-96-jcD" kind="show" identifier="resultVC" id="4og-fr-2gO"/>
@@ -87,7 +89,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sva-7s-RrT" customClass="UIViewX" customModule="FlickerSearchAPI" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="10" width="101" height="88"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ir-5d-VPm" customClass="UIImageViewX" customModule="FlickerSearchAPI" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123" translatesAutoresizingMaskIntoConstraints="NO" id="4ir-5d-VPm" customClass="UIImageViewX" customModule="FlickerSearchAPI" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="101" height="88"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -186,4 +188,7 @@
             <point key="canvasLocation" x="152.80000000000001" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="123" width="600" height="408"/>
+    </resources>
 </document>

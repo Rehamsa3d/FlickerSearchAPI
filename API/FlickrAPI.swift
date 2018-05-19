@@ -92,7 +92,7 @@ class Flickr {
                     })
                     return
                 }
-                
+                print(photosReceived)
                 var flickrPhotos = [FlickrPhoto]()
                 
                 for photoObject in photosReceived {

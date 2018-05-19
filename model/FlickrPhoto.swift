@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+class sss {
 
+    
+}
 class FlickrPhoto : Equatable {
     var thumbnail : UIImage?
     var largeImage : UIImage?
     let photoID : String
-    let farm : Int
+    var farm : Int
     let server : String
     let secret : String
     

@@ -16,13 +16,11 @@ class ViewController: UIViewController {
     var photo:FlickrPhoto?
     fileprivate var searches = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
-    
 }
 extension ViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ searchTextField: UITextField) -> Bool {
